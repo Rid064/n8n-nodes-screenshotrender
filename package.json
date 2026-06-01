@@ -1,0 +1,58 @@
+{
+  "name": "n8n-nodes-screenshotrender",
+  "version": "0.1.1",
+  "description": "n8n community node to capture website screenshots with the ScreenshotRender API",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "screenshot",
+    "screenshotrender",
+    "website-screenshot",
+    "web-capture"
+  ],
+  "license": "MIT",
+  "homepage": "https://screenshotrender.com",
+  "author": {
+    "name": "ScreenshotRender",
+    "email": "methia.farid2001@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rid064/n8n-nodes-screenshotrender.git"
+  },
+  "engines": {
+    "node": ">=20.15"
+  },
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ScreenshotRenderApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/ScreenshotRender/ScreenshotRender.node.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "gulp": "^5.0.0",
+    "n8n-workflow": "^1.70.0",
+    "prettier": "^3.5.0",
+    "typescript": "^5.8.0"
+  }
+}
