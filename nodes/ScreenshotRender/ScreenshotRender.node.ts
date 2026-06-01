@@ -17,6 +17,7 @@ export class ScreenshotRender implements INodeType {
 		version: 1,
 		subtitle: '={{ "Capture: " + $parameter["url"] }}',
 		description: 'Capture website screenshots with the ScreenshotRender API',
+		usableAsTool: true,
 		defaults: {
 			name: 'ScreenshotRender',
 		},

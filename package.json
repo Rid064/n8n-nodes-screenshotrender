@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-screenshotrender",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node to capture website screenshots with the ScreenshotRender API",
   "keywords": [
     "n8n-community-node-package",
